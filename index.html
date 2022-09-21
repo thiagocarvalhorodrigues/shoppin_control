@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de supermercado</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"></div>
+                <a id="navTitle" class="navbar-brand" href="index.html"></a>
+            </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+      <div class="forma-inline" >
+        <div class="form-group" >
+            <input type="text" class="form-control" id="valueToBuy" placeholder="Valor para utilizar">
+         </div>
+          <div class="form-group">
+              <input type="text" class="form-control" id="desc" placeholder="Descrição">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="amount" placeholder="Quantidade">
+         </div>
+         <div class="form-group">
+            <input type="text" class="form-control" id="value" placeholder="Valor">
+         </div>
+         <span id="btnUpdate" style="display: none">
+            <span id="inputIDUpdate"></span>
+            <button onclick="updateData();" class="btn btn-default">Salvar</button>
+            <button onclick="resetForm();" class="btn btn-default">Cancelar</button>
+         </span>
+         <span id="btnAdd">
+            <button onclick="addData();" class="btn btn-default">Adicionar</button>
+            <button onclick="resetForm();" class="btn btn-default">Limpar</button>
+            <button onclick="deleteList();" class="btn btn-default">Apagar lista</button>
+         </span>
+
+      </div>
+
+      <div id="erros"></div>
+        <table id="listTable"class="table">
+        </table>
+      </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <h1 class="text-center text-success">Saldo: <span id="valuePay" >R$ 0,00</span></h1>
+            <h1 class="text-center text-success" style ="color: red">Compras: <span id="totalValue" >R$ 0,00</span></h1>
+        </div>
+    </nav>
+
+      <script src="js/config.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
