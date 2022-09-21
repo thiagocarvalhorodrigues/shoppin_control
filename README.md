@@ -2,7 +2,11 @@
 
 Skills:
 
-Javascript puro, css, bootstrap, html e locastorage.
+* Javascript puro
+* Css
+* Bootstrap
+* Html
+* Locastorage
 
 Lista de compras.
 
