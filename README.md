@@ -2,9 +2,9 @@
 
 Skills:
 
-* Javascript puro
+* Javascript
 * Css
-* Bootstrap
+* Bootstrap 3
 * Html
 * Locastorage
 
